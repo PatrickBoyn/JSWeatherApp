@@ -8,5 +8,6 @@ class UI {
     this.humidity = document.getElementById('weather-humidity');
     this.feelsLike = document.getElementById('weather-feels-like');
     this.dewpoint = document.getElementById('weather-dewpoint');
+    this.wind = document.getElementById('weather-wind');
   }
 }
