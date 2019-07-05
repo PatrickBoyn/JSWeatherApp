@@ -14,5 +14,7 @@ class UI {
   paint(weather) {
     this.location.textContent = weather.name;
     this.description.textContent = weather[0].description;
+    this.temperatureString.textContent = main.temp;
+    this.icon.setAttribute('src', weather.icon);
   }
 }
