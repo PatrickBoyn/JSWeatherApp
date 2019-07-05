@@ -4,5 +4,7 @@ class UI {
     this.description = document.getElementById('weather-description');
     this.temperatureString = document.getElementById('weather-string');
     this.details = document.getElementById('weather-details');
+    this.icon = document.getElementById('weather-icon');
+    this.humidity = document.getElementById('weather-humidity');
   }
 }
