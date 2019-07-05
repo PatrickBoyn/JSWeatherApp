@@ -16,4 +16,8 @@ class Weather {
 
     return responseData;
   }
+
+  changeLocation(zipCode) {
+    this.zip = zipCode;
+  }
 }
