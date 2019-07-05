@@ -5,5 +5,11 @@ class Weather {
     this.zip = zip;
   }
 
-  async getWeather() {}
+  async getWeather() {
+    const response = await fetch(
+      `https://samples.openweathermap.org/data/2.5/weather?zip=${
+        this.zip
+      },us&appid=${this.apiKey}`
+    );
+  }
 }
