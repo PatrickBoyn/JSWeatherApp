@@ -1,1 +1,3 @@
-class Weather {}
+class Weather {
+  constructor() {}
+}
