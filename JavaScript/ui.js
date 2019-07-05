@@ -1,3 +1,6 @@
 class UI {
-  constructor() {}
+  constructor() {
+    this.location = document.getElementById('weather-location');
+    this.description = document.getElementById('weather-description');
+  }
 }
