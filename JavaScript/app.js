@@ -4,7 +4,7 @@ function getWeather() {
   weather
     .getWeather()
     .then(results => {
-      console.log(results.main);
+      console.log(results);
     })
     .catch(error => console.log(error));
 }
