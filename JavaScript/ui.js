@@ -11,5 +11,8 @@ class UI {
     this.wind = document.getElementById('weather-wind');
   }
 
-  paint(weather) {}
+  paint(weather) {
+    this.location.textContent = weather.name;
+    this.description.textContent = weather[0].description;
+  }
 }
