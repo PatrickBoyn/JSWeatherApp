@@ -4,4 +4,6 @@ class Weather {
     this.apiKey = '49b3b5cf25012c4aec2789499c2f3cc9';
     this.zip = zip;
   }
+
+  async getWeather() {}
 }
