@@ -11,5 +11,7 @@ class Weather {
         this.zip
       },us&appid=${this.apiKey}`
     );
+
+    const responseData = await response.json();
   }
 }
