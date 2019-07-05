@@ -10,4 +10,6 @@ class UI {
     this.dewpoint = document.getElementById('weather-dewpoint');
     this.wind = document.getElementById('weather-wind');
   }
+
+  paint(weather) {}
 }
