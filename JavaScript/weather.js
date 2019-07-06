@@ -10,7 +10,7 @@ class Weather {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?zip=${
         this.zip
-      },us&appid=${this.apiKey}&units=fahrenheit`
+      },us&appid=${this.apiKey}&units=imperial`
     );
     console.log(response);
     const responseData = await response.json();
