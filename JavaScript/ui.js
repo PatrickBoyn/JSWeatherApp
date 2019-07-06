@@ -17,9 +17,7 @@ class UI {
     this.location.textContent = weather.name;
     this.description.textContent = weather.weather[0].description;
     this.temperatureString.textContent = weather.main.temp;
-    this.icon.setAttribute(
-      'src',
-      weatherClass.getWeather() + weather.weather[0].icon
-    );
+    // TODO figure out what to do to fix the icon not showing.
+    this.icon.setAttribute('src', weather.weather.icon);
   }
 }
