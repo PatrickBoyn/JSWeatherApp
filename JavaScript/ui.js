@@ -1,3 +1,5 @@
+const weatherClass = new Weather();
+
 class UI {
   constructor() {
     this.location = document.getElementById('weather-location');
@@ -15,6 +17,9 @@ class UI {
     this.location.textContent = weather.name;
     this.description.textContent = weather.weather[0].description;
     this.temperatureString.textContent = weather.main.temp;
-    this.icon.setAttribute('src', weather.weather.icon);
+    this.icon.setAttribute(
+      'src',
+      weatherClass.getWeather() + weather.weather[0].icon
+    );
   }
 }
