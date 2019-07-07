@@ -17,7 +17,7 @@ class UI {
 
   paint(weather) {
     var today = new Date();
-
+    var currentTime = today.getHours();
     this.location.textContent = weather.name;
     this.description.textContent = weather.weather[0].description;
     this.temperatureString.textContent = weather.main.temp;
@@ -31,5 +31,6 @@ class UI {
     this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
     this.wind.textContent = `Wind: ${weather.wind.speed}`;
+    console.log(currentTime);
   }
 }
