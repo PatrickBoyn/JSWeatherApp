@@ -24,14 +24,12 @@ class UI {
     // TODO figure out what to do to fix the icon not showing.
     this.icon.setAttribute(
       'src',
-      `http://openweathermap.org/img/wn/${weather.weather[0].icon}@${
-        weather.weather[0].description
-      }}`
+      `http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`
     );
     this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
     this.wind.textContent = `Wind: ${weather.wind.speed}`;
-    // My own addition to the program.
+    // My own addition to the
     if (currentTime >= 20) {
       this.container.style.backgroundColor = '#032d70';
     }
