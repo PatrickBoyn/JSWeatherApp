@@ -21,7 +21,7 @@ class UI {
     // TODO figure out what to do to fix the icon not showing.
     this.icon.setAttribute(
       'src',
-      weatherClass.getIcon('weather.weather[0].icon')
+      `http://openweathermap.org/img/wn/${weather.weather[0].icon}`
     );
     this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
