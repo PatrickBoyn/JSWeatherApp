@@ -13,5 +13,9 @@ body {
   padding: 1.5rem;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+}
+.container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
 }
