@@ -9,3 +9,7 @@ html {
   /* To make the math easier */
   font-size: 62.5%;
 }
+body {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
