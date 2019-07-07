@@ -75,3 +75,7 @@ hr {
   opacity: 1;
   visibility: visible;
 }
+#location-modal:target #location-modal-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
