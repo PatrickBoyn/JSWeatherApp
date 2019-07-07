@@ -23,7 +23,7 @@ class UI {
       'src',
       `http://openweathermap.org/img/wn/${weather.weather[0].icon}@${
         weather.weather[0].description
-      }`
+      }}`
     );
     this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
