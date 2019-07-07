@@ -1,3 +1,5 @@
+/* RGBA colors: rgb(146, 172, 214, 0.8) */
+/* Translation percents: -50%, 80% */
 *,
 *::before,
 *::after {
@@ -62,12 +64,22 @@ hr {
 /* Modal styling */
 .modal-container {
   position: fixed;
-  background-color: red;
-  border-right: 1px solid #000;
+  background-color: #92acd6;
+  z-index: 1000;
   left: 50%;
   width: 70%;
   max-width: 40rem;
-  transform: translate(-50%, 80%);
+  transform: translate(-50%, -200%);
   padding: 20px;
   border-radius: 8px;
+}
+.modal-window:before {
+  content: '';
+  position: fixed;
+  display: none;
+  background-color: rgba(46, 172, 214, 0.8);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
