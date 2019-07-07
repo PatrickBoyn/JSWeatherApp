@@ -55,6 +55,7 @@ hr {
   color: #cccccc;
 }
 .btn:active {
+  transform: translateY(4px);
   box-shadow: 0 4.2px 4.2px rgba(0, 0, 0, 0.6);
 }
 /* Modal styling */
