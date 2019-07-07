@@ -68,4 +68,5 @@ hr {
   opacity: 0;
   visibility: hidden;
   background-color: #92acd6;
+  transition: all 0.2s;
 }
