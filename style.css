@@ -49,4 +49,11 @@ hr {
   color: #ffffff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.btn:hover {
+  color: #cccccc;
+}
+.btn:active {
+  box-shadow: 0 3.8px 3.8px rgba(0, 0, 0, 0.6);
 }
