@@ -14,12 +14,11 @@ class UI {
   }
 
   paint(weather) {
-    this.weatherIcon = JSON.stringify(weather.weather[0].icon);
     this.location.textContent = weather.name;
     this.description.textContent = weather.weather[0].description;
     this.temperatureString.textContent = weather.main.temp;
     // TODO figure out what to do to fix the icon not showing.
-    this.icon.setAttribute('src', weather.icon);
+    this.icon.setAttribute('src', weather.weather[0].icon);
     this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
     this.wind.textContent = `Wind: ${weather.wind.speed}`;
