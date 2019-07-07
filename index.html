@@ -27,41 +27,21 @@
             </li>
           </ul>
           <hr />
-          <button type="button" data-target="#location-modal" class="btn">
-            Change location
-          </button>
+          <a href="#pen-modal" class="btn">Change</a>
         </div>
       </div>
     </div>
 
     <!-- Modal will go here -->
-    <div class="modal" id="locModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
-            <p>Enter a zip code</p>
-          </div>
-          <div class="modal-body">
-            <form id="weather-form">
-              <div class="form-group">
-                <label for="state">Zip Code</label>
-                <input type="text" id="zip" class="form-control" />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn">
-              Close
-            </button>
-            <button id="weather-change-btn" type="button" class="btn">
-              Save changes
-            </button>
-          </div>
+      <div class="modal-window" id="open-modal">
+        <div class="modal-container">
+          <h5>Change Location</h5>
+          <label for="zip">Enter a Zip Code</label>
+          <input type="text" placeholder="Zip code">
+          <a href="#">close</a>
+          <button>Save Data </button>
         </div>
-      </div>
-    </div>
-
+        
     <script src="JavaScript/secrets.js"></script>
     <script src="JavaScript/local.js"></script>
     <script src="JavaScript/weather.js"></script>
