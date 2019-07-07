@@ -8,7 +8,7 @@ function getWeather() {
     .getWeather()
     .then(results => {
       // console.log(results);
-      ui.paint(results);
+      // ui.paint(results);
     })
     .catch(error => console.log(error));
 }
