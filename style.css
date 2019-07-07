@@ -42,5 +42,7 @@ hr {
 }
 button {
   margin-bottom: 5px;
-  padding: 3px;
+  padding: 9px;
+  border-radius: 100px;
+  background-color: #92acd6;
 }
