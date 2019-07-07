@@ -77,4 +77,6 @@ hr {
 #location-modal > div {
   width: 40rem;
   position: relative;
+  margin: 10% auto;
+  padding: 2rem;
 }
