@@ -21,4 +21,6 @@ body {
   width: 50%;
   text-align: center;
   border-radius: 5px;
+  /* TODO style the padding */
+  padding: 1.5rem;
 }
