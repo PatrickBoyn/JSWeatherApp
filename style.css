@@ -28,3 +28,8 @@ body {
   list-style: none;
   padding-bottom: 3px;
 }
+hr {
+  border: 0;
+  height: 0;
+  margin: 8px 8px;
+}
