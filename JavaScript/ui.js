@@ -31,6 +31,9 @@ class UI {
     this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
     this.wind.textContent = `Wind: ${weather.wind.speed}`;
-    console.log(currentTime);
+
+    if (currentTime >= 20) {
+      this.container.style.backgroundColor = '#032d70';
+    }
   }
 }
