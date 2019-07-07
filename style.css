@@ -21,8 +21,11 @@ body {
   width: 50%;
   text-align: center;
   border-radius: 5px;
-  /* TODO style the padding */
   padding: 1.5rem;
+}
+.col-1-of-6 {
+  background-color: #fff;
+  color: #000;
 }
 #weather-details {
   list-style: none;
