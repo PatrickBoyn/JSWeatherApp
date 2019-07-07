@@ -9,7 +9,7 @@ class UI {
     this.icon = document.getElementById('weather-icon');
     this.humidity = document.getElementById('weather-humidity');
     this.feelsLike = document.getElementById('weather-feels-like');
-    this.dewpoint = document.getElementById('weather-dewpoint');
+    this.pressure = document.getElementById('weather-pressure');
     this.wind = document.getElementById('weather-wind');
   }
 
@@ -19,6 +19,9 @@ class UI {
     this.description.textContent = weather.weather[0].description;
     this.temperatureString.textContent = weather.main.temp;
     // TODO figure out what to do to fix the icon not showing.
-    this.icon.setAttribute('src', weather.weather[0].icon);
+    this.icon.setAttribute('src', weather.icon);
+    this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
+    this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
+    this.wind.textContent = `Wind: ${weather.wind.speed}`;
   }
 }
