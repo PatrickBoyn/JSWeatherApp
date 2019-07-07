@@ -26,6 +26,7 @@ body {
 .col-1-of-6 {
   background-color: #fff;
   color: #000;
+  border-radius: 5px;
 }
 #weather-details {
   list-style: none;
