@@ -70,3 +70,7 @@ hr {
   background-color: #92acd6;
   transition: all 0.2s;
 }
+#location-modal:target {
+  opacity: 1;
+  visibility: visible;
+}
