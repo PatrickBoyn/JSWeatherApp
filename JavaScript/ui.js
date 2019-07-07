@@ -1,4 +1,5 @@
 const secrets = new Secrets();
+const weatherClass = new Weather();
 
 class UI {
   constructor() {
@@ -18,7 +19,10 @@ class UI {
     this.description.textContent = weather.weather[0].description;
     this.temperatureString.textContent = weather.main.temp;
     // TODO figure out what to do to fix the icon not showing.
-    this.icon.setAttribute('src', weather.weather[0].icon);
+    this.icon.setAttribute(
+      'src',
+      weatherClass.getIcon('weather.weather[0].icon')
+    );
     this.humidity.textContent = `Humidity: ${weather.main.humidity}`;
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
     this.wind.textContent = `Wind: ${weather.wind.speed}`;
