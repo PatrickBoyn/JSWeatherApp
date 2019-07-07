@@ -3,6 +3,7 @@ const weatherClass = new Weather();
 
 class UI {
   constructor() {
+    this.container = document.querySelector('.container');
     this.location = document.getElementById('weather-location');
     this.description = document.getElementById('weather-description');
     this.temperatureString = document.getElementById('weather-string');
@@ -15,6 +16,8 @@ class UI {
   }
 
   paint(weather) {
+    var today = new Date();
+
     this.location.textContent = weather.name;
     this.description.textContent = weather.weather[0].description;
     this.temperatureString.textContent = weather.main.temp;
