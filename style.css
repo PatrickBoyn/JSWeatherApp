@@ -70,3 +70,7 @@ hr {
   pointer-events: none;
   transition: all;
 }
+#location-modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
