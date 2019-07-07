@@ -65,5 +65,7 @@ hr {
   top: 0;
   left: 0;
   z-index: 200;
+  opacity: 0;
+  visibility: hidden;
   background-color: #92acd6;
 }
