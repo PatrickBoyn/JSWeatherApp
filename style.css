@@ -24,3 +24,7 @@ body {
   /* TODO style the padding */
   padding: 1.5rem;
 }
+#weather-details {
+  list-style: none;
+  padding-bottom: 3px;
+}
