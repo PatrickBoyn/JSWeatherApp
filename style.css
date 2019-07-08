@@ -1,4 +1,5 @@
 /* RGBA colors: rgb(146, 172, 214, 0.8) */
+/* Night color: #032d70 */
 /* Translation percents: -50%, 80% */
 /* The css is all mien, so feel free to use whatever floats your boat. */
 *,
@@ -110,4 +111,15 @@ a:visited {
 }
 .save-data:focus {
   outline: none;
+}
+/* Dynamically changed classes */
+.daytime {
+  background-color: #92acd6;
+}
+.modal-daytime {
+  background-color: rgba(46, 172, 214, 0.8);
+}
+
+.modal-night-time {
+  background-color: rgba(3, 45, 112, 0.8);
 }
