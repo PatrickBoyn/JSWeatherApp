@@ -73,6 +73,7 @@ hr {
   transform: translate(-50%, -200%);
   padding: 20px;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 .modal-window:before {
   content: '';
