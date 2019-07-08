@@ -27,7 +27,7 @@ class UI {
       `http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`
     );
     this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
-    this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
+    this.pressure.textContent = `Pressure: ${weather.main.pressure} kPa`;
     this.wind.textContent = `Wind: ${weather.wind.speed}`;
     // My own addition to the
     this.daytime.forEach(element => {
