@@ -64,7 +64,7 @@ a:visited {
   color: #cccccc;
 }
 .btn:active {
-  transform: translateX(10rem);
+  transform: translateY(0.7px);
   box-shadow: 0 4.2px 4.2px rgba(0, 0, 0, 0.6);
 }
 /* Modal styling */
