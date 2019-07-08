@@ -116,6 +116,9 @@ a:visited {
 .daytime {
   background-color: #92acd6;
 }
+.night-time {
+  background-color: #032d70;
+}
 .modal-daytime {
   background-color: rgba(46, 172, 214, 0.8);
 }
