@@ -4,8 +4,8 @@ const ui = new UI();
 document.addEventListener('DOMContentLoaded', getWeather);
 
 document.getElementById('save-data').addEventListener('click', e => {
-  const zip = document.getElementById('zip').value;
-  weather.changeLocation(zip);
+  const city = document.getElementById('save-data-input').value;
+  weather.changeLocation(city);
   getWeather();
 });
 
@@ -14,7 +14,7 @@ function getWeather() {
     .getWeather()
     .then(results => {
       // So I don't go over the api limits.
-      // ui.paint(results);
+      ui.paint(results);
     })
     .catch(error => console.log(error));
 }
