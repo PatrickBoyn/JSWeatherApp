@@ -24,6 +24,10 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 1.5rem 8px;
 }
+a:link,
+a:visited {
+  text-decoration: none;
+}
 .container {
   background-color: #92acd6;
   color: #ffffff;
@@ -53,14 +57,14 @@ hr {
   color: #ffffff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: box-shadow 0.2s;
+  transition: all 0.2s;
   margin: 12px 12px;
 }
 .btn:hover {
   color: #cccccc;
 }
 .btn:active {
-  transform: translateY(4px);
+  transform: translateX(10rem);
   box-shadow: 0 4.2px 4.2px rgba(0, 0, 0, 0.6);
 }
 /* Modal styling */
@@ -75,6 +79,7 @@ hr {
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 .modal-window:before {
   content: '';
