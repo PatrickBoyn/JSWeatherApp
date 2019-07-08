@@ -100,3 +100,13 @@ a:visited {
 .modal-window:target .modal-container {
   transform: translate(-50%, 80%);
 }
+#save-data-input {
+  margin: 0 1rem;
+  border: 1px transparent;
+}
+#save-data-input:focus {
+  border: 1px solid #92acd6;
+}
+.save-data:focus {
+  outline: none;
+}
