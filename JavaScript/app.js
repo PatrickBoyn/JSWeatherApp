@@ -3,7 +3,10 @@ const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getWeather);
 
-document.getElementById('save-data').addEventListener('click', e => {});
+document.getElementById('save-data').addEventListener('click', e => {
+  const zip = document.getElementById('zip').value;
+  weather.changeLocation(zip);
+});
 
 function getWeather() {
   weather
