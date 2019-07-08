@@ -83,3 +83,9 @@ hr {
   height: 100%;
   width: 100%;
 }
+.modal-window:target:before {
+  display: block;
+}
+.modal-window:target .modal-container {
+  transform: translate(-50%, 80%);
+}
