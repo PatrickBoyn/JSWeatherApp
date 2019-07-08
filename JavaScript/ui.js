@@ -3,7 +3,8 @@ const weatherClass = new Weather();
 
 class UI {
   constructor() {
-    this.container = document.querySelector('.container');
+    this.daytime = document.querySelectorAll('.daytime');
+    this.modalTime = document.querySelector('.modal-daytime');
     this.location = document.getElementById('weather-location');
     this.description = document.getElementById('weather-description');
     this.temperatureString = document.getElementById('weather-string');
@@ -30,8 +31,18 @@ class UI {
     this.pressure.textContent = `Pressure: ${weather.main.pressure}`;
     this.wind.textContent = `Wind: ${weather.wind.speed}`;
     // My own addition to the
-    if (currentTime >= 20) {
-      this.container.style.backgroundColor = '#032d70';
+    this.daytime.forEach(element => {
+      if (currentTime >= 20 || currentTime < 6) {
+        element.style.backgroundColor = '#032d70';
+      } else {
+        element.style.backgroundColor = '#92acd6';
+      }
+    });
+    // TODO figure out why this won't work.
+    if (currentTime >= 20 || currentTime < 6) {
+      this.modalTime.style.backgroundColor = '#032d70';
+    } else {
+      this.modalTime.style.backgroundColor = '#92acd6';
     }
   }
 }
