@@ -3,6 +3,8 @@ const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', getWeather);
 
+document.getElementById('save-data').addEventListener('click', e => {});
+
 function getWeather() {
   weather
     .getWeather()
