@@ -4,7 +4,12 @@ class Storage {
     this.defaultCity = '29609';
   }
 
-  getLocationData() {}
+  getLocationData() {
+    if (localStorage.getItem('city') === null) {
+      this.city = this.defaultCity;
+    } else {
+    }
+  }
 
   setLocationData(city) {
     localStorage.setItem('city', city);
