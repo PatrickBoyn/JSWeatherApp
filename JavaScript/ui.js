@@ -14,6 +14,7 @@ class UI {
     this.feelsLike = document.getElementById('weather-feels-like');
     this.pressure = document.getElementById('weather-pressure');
     this.wind = document.getElementById('weather-wind');
+    this.saveData = document.querySelector('#save-data');
   }
 
   paint(weather) {
@@ -40,6 +41,7 @@ class UI {
     // TODO figure out why this won't work.
     if (currentTime >= 20 || currentTime < 6) {
       this.modalTime.style.backgroundColor = '#032d70';
+      this.saveData.style.borderColor = '#032d70';
     } else {
       this.modalTime.style.backgroundColor = '#92acd6';
     }
